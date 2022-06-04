@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "photoId": 0,
+    "KullaniciModel": {
+      "id": 1,
+      "kullaniciAdi": "seyma",
+      "sifre": "12345",
+      "adi": "Aydin",
+      "soyadi": null,
+      "eMail": null,
+      "dogumTarihi": null,
+      "likesId": null
+    },
+    "comment": "ay çok beğendim",
+    "dateTime": "2022-05-04"
+  },
+  {
+    "id": 1,
+    "photoId": 0,
+    "KullaniciModel": {
+      "id": 1,
+      "kullaniciAdi": "seyma",
+      "sifre": "12345",
+      "adi": "Aydin",
+      "soyadi": null,
+      "eMail": null,
+      "dogumTarihi": null,
+      "likesId": null
+    },
+    "comment": "Çok kötü",
+    "dateTime": "2022-05-04"
+  }
+
+]

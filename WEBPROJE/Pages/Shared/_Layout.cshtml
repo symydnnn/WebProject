@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebProjeleri2022</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebProjeleri2022.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    @RenderSection("Styles",false)
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-light">Random Fun</a>
+
+            <div class="navbar-item nav-link">
+                <a class="nav-link text-light" asp-area="" asp-page="/Index">Ana Sayfa</a>
+            </div>
+
+            <div class="navbar-item nav-link">
+                <a class="nav-link text-light" asp-area="" asp-page="/Fotograflar">Fotoğraflar</a>
+            </div>
+
+            <div class="profil">
+                <a class="nav-link text-light" asp-area="" asp-page="/Admin">Profil</a>
+            </div>
+
+            <div class="foto-ekle">
+                <a class="nav-link text-light" asp-area="" asp-page="/AddPhoto">Fotoğraf Ekle</a>
+            </div>
+            <div class="bilgi">
+                <a class="nav-link text-light" asp-area="" asp-page="/Bilgi">İçerik</a>
+            </div>
+
+            <div class="giris">
+                <a class="nav-link text-light" asp-area="" asp-page="/Login">Giriş Yap</a>
+            </div>
+            <div class="kayit">
+                <a class="nav-link text-light" asp-area="" asp-page="/SignIn">Kayıt Ol</a>
+            </div>
+            
+            
+
+        </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+     <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <span>RandomFun</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Linkler</li>
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Fotoğraflar</a></li>
+                    <li><a href="#">İçerik</a></li>
+                    <li><a href="#">Hakkımızda</a></li>	
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Servisler</li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                
+                </ul>
+        <ul class="box">
+                    <li class="link_name">Other services</li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Content Marketing</a></li>
+                    <li><a href="#">Prints</a></li>
+                    <li><a href="#">Social Media</a></li>
+                
+                </ul>
+                <ul class="box">
+                    <li class="link_name">İletişim</li>
+                    <li><a href="#">+91 8879887262</a></li>
+                    <li><a href="#">+91 8879887262</a></li>
+                    <li><a href="#">contact@randomfun.com</a></li>			
+                </ul>
+            </div>
+        </div>
+            <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2022 <a href="#">RandomFun.</a></span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>  
+            </span>
+          </div>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/gallery.js" asp-append-version="true"></script>
+    
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

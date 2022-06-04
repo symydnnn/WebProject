@@ -1,0 +1,59 @@
+﻿@page
+@model WebProjeleri2022.Pages.SıgnInModel
+@{
+
+}
+@section Styles{
+    <link rel="stylesheet" href="~/css/signin.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+}
+
+    <form asp-page-handler="Form" method="post">
+        <div class="login-register">
+            <div class="form">
+                <span class="title">Sign Up</span>
+                <span action="#">
+                    <div class="input-field">
+                        <label class="form-label">Adı:</label>
+                        <input type="text" class="form-control" asp-for="user.adi">
+                    </div>
+                    <div class="input-field">
+                        <label class="form-label">Soyadı:</label>
+                        <input type="text" class="form-control" asp-for="user.soyadi">
+                    </div>
+
+                    <div class="input-field">
+                        <label class="form-label">Kullanıcı Adı:</label>
+                        <input type="text" class="form-control" asp-for="user.kullaniciAdi">
+                    </div>
+                    <div class="input-field">
+                        <label class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" asp-for="user.eMail">
+                    </div>
+
+                    <div class="input-field">
+                        <label class="form-label">Doğum Tarihi:</label>
+                        <input type="date" class="form-control" asp-for="user.dogumTarihi">
+                    </div>
+
+                    <div class="input-field">
+                        <label class="form-label">Şifre:</label>
+                        <input type="password" class="form-control" asp-for="user.sifre">
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Kayıt Ol">
+                    </div>
+                </span>
+
+                <div class="login-signup">
+                    <span class="text">
+                        Mevcut hesabınız var mı?
+                        <a class="text login-link" asp-area="" asp-page="/Login">Giriş Yap</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+

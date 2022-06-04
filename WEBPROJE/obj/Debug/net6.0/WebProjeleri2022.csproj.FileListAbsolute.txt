@@ -1,0 +1,234 @@
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\appsettings.json
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\anilb\source\repos\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\refint\WebProjeleri2022.dll
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\anilb\source\repos\WebProjeleri2022\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\appsettings.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\refint\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjeleri2022\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\appsettings.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebProjeleri2022\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\Monstar\Desktop\WebProjeleri2022\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\appsettings.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\refint\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\OneDrive\Masaüstü\WebProjesi\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\appsettings.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\Monstar\Desktop\WebPoject-0\WebProjesi\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\appsettings.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\webss\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\refint\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\OneDrive\Masaüstü\webss\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\appsettings.json
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\Monstar\Desktop\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\appsettings.json
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\Downloads\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\refint\WebProjeleri2022.dll
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\Downloads\WEBPROJE\obj\Debug\net6.0\ref\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\appsettings.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.staticwebassets.runtime.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.exe
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.deps.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.runtimeconfig.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\bin\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.csproj.AssemblyReference.cache
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfoInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.AssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.csproj.CoreCompileInputs.cache
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cache
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.RazorAssemblyInfo.cs
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\scopedcss\bundle\WebProjeleri2022.styles.css
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\scopedcss\projectbundle\WebProjeleri2022.bundle.scp.css
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\refint\WebProjeleri2022.dll
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.pdb
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\WebProjeleri2022.genruntimeconfig.cache
+C:\Users\seyma\OneDrive\Masaüstü\ŞEYMA\Bilgisayar Mühendisliği Dersler\Web Programlama\WebProject\WEBPROJE\obj\Debug\net6.0\ref\WebProjeleri2022.dll

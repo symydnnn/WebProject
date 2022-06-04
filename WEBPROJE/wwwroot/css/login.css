@@ -1,0 +1,144 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    height: 100vh;
+    display: flexed;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4a870;
+}
+
+.login-register {
+    width: 200%;
+    background: #fff;
+    border-radius: 20px;
+    margin: 50%;
+    margin-top: 5%;
+    padding: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+    .login-register .forms {
+        width: 50%;
+        transition: height 0.8s ease;
+    }
+
+    .login-register .form {
+        width: 50%;
+        margin: 5%;
+        background-color: #fff;
+    }
+
+    .login-register .form .title {
+        position: relative;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #e4a863;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    font-size: 15px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #e4a863;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 25px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #e4a863;
+}
+
+.input-field i.icon{
+    left: 20px;
+}
+.input-field i.showHidePw{
+    left: 380px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin:4px;
+    accent-color: #e4a863;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #e4a863;
+    font-size: 15px;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    border-radius: 80px;
+    background-color: #e4a873;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #ff0000;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}

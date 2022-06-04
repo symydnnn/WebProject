@@ -1,0 +1,121 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    height: 100vh;
+    display: flexed;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4a873;
+}
+
+.login-register {
+    width: 200%;
+    background: #fff;
+    border-radius: 20px;
+    margin: 50%;
+    margin-top: 0;
+    padding-left: 50%;
+    padding-top: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+    .login-register .forms {
+        width: 50%;
+        transition: height 0.8s ease;
+    }
+
+    .login-register .form {
+        width: 50%;
+        margin: 5%;
+        background-color: #fff;
+    }
+
+    .login-register .form .title {
+        position: relative;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    background-color: #e4a863;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    font-size: 15px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #ffd1a0;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 25px;
+    transition: all 0.2s ease;
+}
+
+
+.input-field i.icon{
+    left: 20px;
+}
+.input-field i.showHidePw{
+    left: 380px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form a.text {
+    color: #e4a863;
+    font-size: 22px;
+    text-decoration: none;
+}
+.form a:hover {
+    text-decoration-color: blue;
+}
+
+.form .button input {
+    margin-top: 20px;
+    left: 0%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 7px;
+    border-radius: 80px;
+    background-color: #e4a873;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #6abe88;
+}
+
+.form .login-signup {
+    margin-top: 25px;
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+﻿@page
+@model WebProjeleri2022.Pages.LoginModel
+@{
+    
+}
+@section Styles{
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="~/js/loginregister.js" asp-append-version="true"></script>
+    
+}
+
+<form asp-page-handler="Form" method="post">
+    <div class="login-register">
+        <div class="form">
+            <span class="title">Login</span>
+            <span action="#">
+                <div class="input-field">
+                    <input type="text" placeholder="Username" required asp-for="user.kullaniciAdi">
+                    <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Password" required asp-for="user.sifre">
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="logCheck">
+                        <label for="logCheck" class="text">Hatırla Beni</label>
+                    </div>
+
+                    <a class="text" asp-area="" asp-page="/ChangePassword">Şifreni mi unuttun?</a>
+                </div>
+
+                <div class="input-field button">
+                    <input type="submit" value="Giriş Yap">
+                </div>
+
+            </span>
+        </div>
+</form>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "kullaniciAdi": null,
+    "sifre": null,
+    "adi": null,
+    "soyadi": null,
+    "eMail": null,
+    "dogumTarihi": null,
+    "likesId": null
+  },
+  {
+    "id": 1,
+    "kullaniciAdi": "seyma",
+    "sifre": "12345",
+    "adi": "Aydin",
+    "soyadi": null,
+    "eMail": null,
+    "dogumTarihi": null,
+    "likesId": null
+  },
+  {
+    "id": 2,
+    "kullaniciAdi": "emo",
+    "sifre": "emo",
+    "adi": "emirhan",
+    "soyadi": "ama\u00E7",
+    "eMail": "emo@gmail.com",
+    "dogumTarihi": "2022-05-04",
+    "likesId": [
+      1,
+      2,
+      3,
+      7,
+      8
+    ]
+  },
+  {
+    "id": 3,
+    "kullaniciAdi": "dico",
+    "sifre": "dico",
+    "adi": "Dicle",
+    "soyadi": "K\u0131l\u0131\u00E7",
+    "eMail": "dic@gmail.com",
+    "dogumTarihi": "2022-01-05",
+    "likesId": null
+  },
+  {
+    "id": 4,
+    "kullaniciAdi": "macit",
+    "sifre": "macit",
+    "adi": "Muhammet",
+    "soyadi": "Macit",
+    "eMail": "macit@gmail.com",
+    "dogumTarihi": "2022-03-16",
+    "likesId": null
+  }
+]

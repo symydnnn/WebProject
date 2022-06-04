@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo gallery UI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="ana">
+            <div class="header">
+                <h1 class="logo">Fotoğraflar</h1>
+                <form>
+                    <input type="text" placeholder="Araştır">
+                    <ion-icon name="search-outline"></ion-icon>
+                </form>
+            </div>
+
+            <div class="gallery" id="album-view"></div>
+            
+            <a class="load-more" data-img="curated">Daha Fazlasıııııı!</a>
+
+        </div>
+    </section>
+    <section id="album">
+    </section>
+    
+
+
+   <flex>
+   <section id="modal-view" class="hidden">
+       
+
+   </section>
+   <span class="hidden" id="sidemenu" >
+       <span>
+           <span><img class="likebutton" src="https://image.shutterstock.com/image-vector/like-approve-icon-vector-graphics-600w-1620731971.jpg"/></span>
+           <span><img class="downloadbutton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcTIGCDOMvv0movJ0nWSNiu5eS4ukPtNEQ&usqp=CAU"/></span>
+           <span><img class="sharebutton" src="https://www.svgrepo.com/show/122182/share-button.svg"/>  </span>
+       </span>
+   
+   <div class="yorumlar">
+       <textarea class="yorum" >YORUM</textarea> <span class="yorumbutton">Yorum Yap</span>
+       <textarea class="yorum" >YORUMmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</textarea> <span class="yorumbutton">Yorum Yap</span>
+   </div>
+   
+   </flex>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./site.js"></script>
+
+</body>
+
+
+<div class="photoId" src="@Model.photoId"></div>
+</html>
+

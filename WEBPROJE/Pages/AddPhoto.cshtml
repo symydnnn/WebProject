@@ -1,0 +1,23 @@
+﻿@page
+@model WebProjeleri2022.Pages.AddPhotoModel
+@{
+}
+
+
+ <form asp-page-handler="Form" method="post">
+<div class="row g-3">
+    <div class="col-12">
+       <label class="form-label">Foto İsmi</label>
+        <input type="text" class="form-control" asp-for="photo.photoName">
+    </div>
+
+    <div class="col-12">
+       <label class="form-label">Foto URL</label>
+        <input type="text" class="form-control" asp-for="photo.url">
+    </div>
+
+    <div class="col-13">
+        <button type="submit" class="buton">Ekle</button>
+    </div>
+</div>
+</form>
