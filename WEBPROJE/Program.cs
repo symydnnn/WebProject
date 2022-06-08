@@ -5,7 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddTransient<JsonProjectService>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<PhotoService>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

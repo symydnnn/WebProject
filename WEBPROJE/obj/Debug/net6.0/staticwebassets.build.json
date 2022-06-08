@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1SQz5g8VB988wJioH3wd5bSVrK0BLJcCb4ASs3y2p0g=",
+  "Hash": "l2oaKTpSAnOTABwoKNaX1ijljh92WVB2mEa7t1EHOcs=",
   "Source": "WebProjeleri2022",
   "BasePath": "_content/WebProjeleri2022",
   "Mode": "Default",
@@ -253,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\seyma\\OneDrive\\Masaüstü\\ŞEYMA\\Bilgisayar Mühendisliği Dersler\\Web Programlama\\WebProject\\WEBPROJE\\wwwroot\\js\\gallery.js",
-      "SourceId": "WebProjeleri2022",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\seyma\\OneDrive\\Masaüstü\\ŞEYMA\\Bilgisayar Mühendisliği Dersler\\Web Programlama\\WebProject\\WEBPROJE\\wwwroot\\",
-      "BasePath": "_content/WebProjeleri2022",
-      "RelativePath": "js/gallery.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\gallery.js"
     },
     {
       "Identity": "C:\\Users\\seyma\\OneDrive\\Masaüstü\\ŞEYMA\\Bilgisayar Mühendisliği Dersler\\Web Programlama\\WebProject\\WEBPROJE\\wwwroot\\js\\loginregister.js",
