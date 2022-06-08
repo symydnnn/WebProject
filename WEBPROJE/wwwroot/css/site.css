@@ -4,13 +4,11 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .container {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
-    
 }
 
 html {
@@ -70,6 +68,7 @@ section {
 .galeri {
     align-items: center;
 }
+
 form {
     margin-top: 30px;
     width: 80%;
@@ -91,7 +90,6 @@ input {
         opacity: .5;
         color: gray;
         font-family: 'Montserrat';
-
     }
 
 
@@ -183,6 +181,7 @@ form ion-icon {
         grid-gap: 30px;
     }
 }
+
 #like {
     width: 30px;
     height: 30px;
@@ -226,7 +225,7 @@ img {
 #album-view img {
     width: 300px;
     height: 300px;
-    border:none;
+    border: none;
 }
 
 #sidemenu {
@@ -255,14 +254,14 @@ textarea {
 .yorum {
     display: inline-block;
     margin-top: 2vh;
-    margin-bottom:1vh;
+    margin-bottom: 1vh;
     background-color: rgba(230,150,100, 0.8);
     border: solid;
     border-color: #e4a870;
-    border-width:1vw;
+    border-width: 1vw;
     padding: 1vw;
     width: 18vw;
-    border-radius:50px;
+    border-radius: 50px;
 }
 
 .likebutton {
@@ -594,4 +593,40 @@ footer .bottom-details {
     footer .content .link-boxes .input-box {
         width: 100%;
     }
+}
+
+.zoom {
+    transition: transform .5s; /* Animation */
+    width: auto;
+    height: auto;
+}
+
+    .zoom:hover {
+        transform: scale(1.1);
+        z-index: 101;
+        width: auto;
+        height: auto;
+    }
+
+.fotobtn {
+    background-color: #e4a870;
+    border: solid #e4a870;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 10px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+    .fotobtn:hover {
+        border-color: salmon;
+        background-color: salmon;
+    }
+
+.buttons {
+    padding: 5px;
+    height: 30vh;
+    width: 10vw;
 }

@@ -22,10 +22,6 @@ function createImage(src) {
 
 var currentid = '';
 
-function likeClick() {
-
-    console.log(currentid);
-}
 
 function onThumbnailClick(event) {
 

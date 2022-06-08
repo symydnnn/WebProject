@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eFd5h9cd7BFRlJHhC7GAHZCSIbT1FvuqpLPFcCpQ0D8=",
+  "Hash": "1SQz5g8VB988wJioH3wd5bSVrK0BLJcCb4ASs3y2p0g=",
   "Source": "WebProjeleri2022",
   "BasePath": "_content/WebProjeleri2022",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\changepassword.css"
+    },
+    {
+      "Identity": "C:\\Users\\seyma\\OneDrive\\Masaüstü\\ŞEYMA\\Bilgisayar Mühendisliği Dersler\\Web Programlama\\WebProject\\WEBPROJE\\wwwroot\\css\\index.css",
+      "SourceId": "WebProjeleri2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\seyma\\OneDrive\\Masaüstü\\ŞEYMA\\Bilgisayar Mühendisliği Dersler\\Web Programlama\\WebProject\\WEBPROJE\\wwwroot\\",
+      "BasePath": "_content/WebProjeleri2022",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
       "Identity": "C:\\Users\\seyma\\OneDrive\\Masaüstü\\ŞEYMA\\Bilgisayar Mühendisliği Dersler\\Web Programlama\\WebProject\\WEBPROJE\\wwwroot\\css\\login.css",

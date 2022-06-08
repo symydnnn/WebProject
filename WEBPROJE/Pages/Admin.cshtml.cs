@@ -22,8 +22,6 @@ namespace WebProjeleri2022.Pages
         [BindProperty]
         public KullaniciModel kullanici { get; set; }
 
-        ISession session { get; set; }
-
         public void OnGet()
         {
         }
@@ -35,7 +33,7 @@ namespace WebProjeleri2022.Pages
 
             if (kontrol != null)
             {
-                    userService.UpdateUser(kullanici);
+                    userService.UpdateUser(userService.GetUserByNickname(kontrol.kullaniciAdi), kullanici);
 
                 return RedirectToPage("/Admin", new { Status = "True" });
             }

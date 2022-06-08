@@ -20,6 +20,7 @@ namespace WebProjeleri2022.Pages
         [BindProperty]
         public KullaniciModel user { get; set; }
 
+        public static bool isInside = false;
 
         public void OnGet()
         {
@@ -36,6 +37,7 @@ namespace WebProjeleri2022.Pages
                 if (kontrol.sifre == user.sifre)
                 {
                     _httpContextAccessor.HttpContext.Session.SetString("KullaniciAdi", user.kullaniciAdi);
+                    isInside = true;
                     return RedirectToPage("/Admin", new { Status = "True" });
                 }
                 else

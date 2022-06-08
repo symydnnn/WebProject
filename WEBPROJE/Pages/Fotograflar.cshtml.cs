@@ -9,17 +9,23 @@ namespace WebProjeleri2022.Pages
     public class FotograflarModel : PageModel
     {
 
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
         private readonly ILogger<FotograflarModel> _logger;
 
-        public FotograflarModel(ILogger<FotograflarModel> logger, PhotoService PhotoService)
+        public FotograflarModel(ILogger<FotograflarModel> logger, PhotoService PhotoService, IHttpContextAccessor httpContextAccessor)
         {
             _logger = logger;
 
-            photoService = PhotoService;   
+            photoService = PhotoService;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [BindProperty]
         public PhotoService photoService { get; set; }
+
+        [BindProperty]
+        public UserService userService { get; set; }
 
         [BindProperty]
         public CommentModel comment { get; set; }
@@ -53,11 +59,6 @@ namespace WebProjeleri2022.Pages
         }
 
 
-        public void OnPost(PhotoService photoService)
-        {
-        }
-
-
         public IActionResult OnComments(int photoId)
         {
             List<String> comments = photoService.GetCommentsByPhotoId(photoId);
@@ -69,5 +70,8 @@ namespace WebProjeleri2022.Pages
         {
             throw new NotImplementedException();
         }
+
+
+
     }
 }

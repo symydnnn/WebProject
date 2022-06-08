@@ -105,6 +105,8 @@ span{
     float: right;
     background-color: #fdfdfd;
     padding: 150px;
+    border: 5px solid white;
+    border-radius: 50px;
 }
 
 .inner-container h1{

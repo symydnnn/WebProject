@@ -1,16 +1,28 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
 @model WebProjeleri2022.Pages.FotograflarModel
 @{
 }
-
+@functions {
+    public object AddLikes(int photoId)
+    {
+        string kullaniciAdi = @Accessor.HttpContext.Session.GetString("KullaniciAdi");
+        Console.WriteLine(photoId);
+        @Model.userService.addToLikes(kullaniciAdi, photoId);
+        return null;
+    }
+}
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo gallery UI</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./site.js"></script>
+
 </head>
 <body>
     <section>
@@ -26,15 +38,35 @@
             <div class="gallery" id="album-view">
                 @foreach (var foto in Model.Photos)
                 {
-                    <div class="item" style="max-width: 20rem; border:none;">
-                        <img class="gview" id=@foto.id src=@foto.url>
+                    <div class="item zoom" style="max-width: 20rem; border:none;">
+                        <img class="gview" src=@foto.url>
                         <h3 id=null>@foto.photoName</h3>
                     </div>
 
-                    <span>
-                        <span><img class="likebutton" src="https://image.shutterstock.com/image-vector/like-approve-icon-vector-graphics-600w-1620731971.jpg" /></span>
-                        <span><img class="downloadbutton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcTIGCDOMvv0movJ0nWSNiu5eS4ukPtNEQ&usqp=CAU" /></span>
-                        <span><img class="sharebutton" src="https://www.svgrepo.com/show/122182/share-button.svg" />  </span>
+                    <span class="buttons">
+                        <span>
+                            <a download="a.jpg" href=@foto.url>
+                                <button class="btn @foto.id fotobtn"><i class="fa fa-download"></i> İndir</button>
+
+                            </a>
+                        </span>
+                        <span>
+                            <button type="button" class="btn fotobtn" asp-for="@Model.photoId = @foto.id" onclick="AddProduct(@foto.id)">
+                                <p id="ShowResult1">
+                                </p><i class="fa fa-heart"></i> Beğen
+                            </button>
+                        </span>
+                        <script>
+                            var count = 0;
+                            function AddProduct(fotoId) {
+                            @{
+                                AddLikes(@foto.id);
+                            }
+                                count++;
+                                $("#ShowResult1").text(count);
+                            }
+                        </script>
+                        @*<span><img class="downloadbutton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcTIGCDOMvv0movJ0nWSNiu5eS4ukPtNEQ&usqp=CAU" /></span>*@
                     </span>
 
                     <div class="yorumlar">
@@ -49,20 +81,12 @@
                     </div>
 
                 }
+            </div>
+            <a class="load-more" asp-page="/AddPhoto" data-img="curated">Daha Fazlası!</a>
         </div>
-
     </section>
     <section id="album">
     </section>
-
-    <flex>
-        <section id="modal-view" class="hidden">
-        </section>
-
-        <span class="hidden" id="sidemenu">
-
-        </span>
-    </flex>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>

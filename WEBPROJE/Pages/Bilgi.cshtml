@@ -2,72 +2,213 @@
 @model WebProjeleri2022.Pages.Shared.IndexModel
 @{
 }
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<div id="text">
-
+<div class="text" id="text">
 </div>
-<div id="text2">
-
+<div class="text" id="text2">
 </div>
-<div>
+<div id="fotodiv">
     <img id='foto' src="">
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fotoModal">
+    <div id="caption"></div>
 </div>
 <button id="buton" type="button" class="btn btn-primary"><i class="fa fa-random"></i> Yenile</button>
 <style>
-    #text{
-        height: 100px;
+    .btn-primary {
+        background-color: #E4A870;
+        border: 2px solid #E4A870;
     }
-    #foto{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50vh;
-    border-radius: 20px;
+    .btn-primary:focus{
+        background-color: #F1C394;
+        box-shadow: rgba(200, 150, 100, 0.5) 0px 5px 5px, rgba(0, 0, 0, 0.12) 0px -2px 3px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 6px 5px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: 2px solid #F1C394;
     }
 
-</style>
+    .btn-primary:hover {
+        background-color: #F1C394;
+        border: 2px solid #F1C394;
+        box-shadow: rgba(200, 150, 100, 0.5) 0px 5px 5px, rgba(0, 0, 0, 0.12) 0px -2px 3px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 6px 5px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .text {
+        /* height: 100px;*/
+        background-color: #F1C394;
+        width: 50vw;
+        border: 5px solid #F1C394;
+        box-shadow: rgba(200, 150, 100, 0.5) 0px 15px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        padding: 10px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    #foto {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50vh;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+
+    }
+
+        #foto:hover {
+            opacity: 0.80;
+                    box-shadow: rgba(200, 150, 100, 0.5) 0px 15px 15px, rgba(200, 150, 100, 0.5) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           
+        }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+
+    /* Add Animation */
+    .modal-content, #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    -webkit-keyframes zoom {
+        from
+
+    {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+
+    }
+
+    keyframes zoom {
+        from
+
+    {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* 100% Image Width on Smaller Screens */
+    media only screen and (max-width: 700px) {
+        .modal-content
+
+    {
+        width: 100%;
+    }
+
+    }</style>
+
 <script>
-const urlKedi = "https://catfact.ninja/fact";
-const urlActivity = "https://v2.jokeapi.dev/joke/Any?safe-mode";
-const urlDog = "https://dog.ceo/api/breeds/image/random";
+    const urlKedi = "https://catfact.ninja/fact";
+    const urlActivity = "https://v2.jokeapi.dev/joke/Any?safe-mode";
+    const urlDog = "https://dog.ceo/api/breeds/image/random";
 
-async function getKedi(){
-    const response = await fetch(urlKedi);
-    const data = await response.json();
-    document.getElementById('text').textContent = "About Cats: "+ data.fact;
-}
+    async function getKedi() {
+        const response = await fetch(urlKedi);
+        const data = await response.json();
+        document.getElementById('text').textContent = "About Cats: " + data.fact;
+    }
 
 
-async function getJoke(){
-    const response = await fetch(urlActivity);
-    const data = await response.json();
-    if(data.type!="single")
-    getJoke();
-    document.getElementById('text2').textContent = "Joke: " + data.joke;
-}
+    async function getJoke() {
+        const response = await fetch(urlActivity);
+        const data = await response.json();
+        if (data.type != "single")
+            getJoke();
+        document.getElementById('text2').textContent = "Joke: " + data.joke;
+    }
 
-async function getDog(){
-    const response = await fetch(urlDog);
-    const data = await response.json();
-    document.getElementById('foto').src = data.message;
-}
+    async function getDog() {
+        const response = await fetch(urlDog);
+        const data = await response.json();
+        document.getElementById('foto').src = data.message;
+    }
     getKedi();
-  getJoke();
-  getDog();
-var ele = document.getElementById('buton');
-ele.addEventListener("click", e=> {
-  getKedi();
-  getJoke();
-  getDog();
-});
+    getJoke();
+    getDog();
+    var ele = document.getElementById('buton');
+    ele.addEventListener("click", e => {
+        getKedi();
+        getJoke();
+        getDog();
+    });
 
-getDog();
+    getDog();
 
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("foto");
+    var modalImg = document.getElementById("fotoModal");
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("modal")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
 </script>
 
 

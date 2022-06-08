@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     @RenderSection("Styles",false)
+    @using Microsoft.AspNetCore.Http
+    @inject IHttpContextAccessor Accessor
 
 </head>
 <body>
@@ -16,32 +18,41 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand text-light">Random Fun</a>
 
-            <div class="navbar-item nav-link">
+            @if (LoginModel.isInside == true)
+            {
+                <div class="navbar-item nav-link">
                 <a class="nav-link text-light" asp-area="" asp-page="/Index">Ana Sayfa</a>
-            </div>
-
-            <div class="navbar-item nav-link">
+                </div>
+                <div class="navbar-item nav-link">
                 <a class="nav-link text-light" asp-area="" asp-page="/Fotograflar">Fotoğraflar</a>
-            </div>
+                </div>
 
-            <div class="profil">
+                <div class="profil">
                 <a class="nav-link text-light" asp-area="" asp-page="/Admin">Profil</a>
-            </div>
+                </div>
 
-            <div class="foto-ekle">
+                <div class="foto-ekle">
                 <a class="nav-link text-light" asp-area="" asp-page="/AddPhoto">Fotoğraf Ekle</a>
-            </div>
+                </div>
+
+                <div class="cikis-yap">
+                <a class="nav-link text-light" asp-area="" asp-page="/Cikis">Çıkış Yap</a>
+                </div>
+                
+            }
+            else
+            {
+                <div class="giris">
+                <a class="nav-link text-light" asp-area="" asp-page="/Login">Giriş Yap</a>
+                </div>
+                <div class="kayit">
+                <a class="nav-link text-light" asp-area="" asp-page="/SignIn">Kayıt Ol</a>
+                </div>
+            }
+
             <div class="bilgi">
                 <a class="nav-link text-light" asp-area="" asp-page="/Bilgi">İçerik</a>
-            </div>
-
-            <div class="giris">
-                <a class="nav-link text-light" asp-area="" asp-page="/Login">Giriş Yap</a>
-            </div>
-            <div class="kayit">
-                <a class="nav-link text-light" asp-area="" asp-page="/SignIn">Kayıt Ol</a>
-            </div>
-
+                </div>
             <div class="hakkimizda">
                 <a class="nav-link text-light" asp-area="" asp-page="/Hakkimizda">Hakkimizda</a>
             </div>
@@ -56,7 +67,7 @@
         </main>
     </div>
 
-     <footer>
+          <footer>
         <div class="content">
             <div class="top">
                 <div class="logo-details">
@@ -73,32 +84,26 @@
             <div class="link-boxes">
                 <ul class="box">
                     <li class="link_name">Linkler</li>
-                    <li><a href="#">Ana Sayfa</a></li>
-                    <li><a href="#">Fotoğraflar</a></li>
-                    <li><a href="#">İçerik</a></li>
-                    <li><a href="#">Hakkımızda</a></li>	
+                    <li><a asp-page="/Index">Ana Sayfa</a></li>
+                    <li><a asp-page="/Login">Giriş Yap</a></li>
+                    <li><a asp-page="/SignIn">Kayıt Ol</a></li>
+                    <li><a asp-page="/Hakkimizda">Hakkımızda</a></li>	
                 </ul>
                 <ul class="box">
-                    <li class="link_name">Servisler</li>
-                    <li><a href="#">A</a></li>
-                    <li><a href="#">B</a></li>
-                    <li><a href="#">C</a></li>
-                    <li><a href="#">D</a></li>
+                    <li class="link_name">Hizmetler</li>
+                    <li style="color:white">Fotoğraflar</li>
+                    <li style="color:white">İçerik</li>
                 
                 </ul>
         <ul class="box">
-                    <li class="link_name">Other services</li>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">Content Marketing</a></li>
-                    <li><a href="#">Prints</a></li>
-                    <li><a href="#">Social Media</a></li>
                 
                 </ul>
                 <ul class="box">
                     <li class="link_name">İletişim</li>
-                    <li><a href="#">+91 8879887262</a></li>
-                    <li><a href="#">+91 8879887262</a></li>
-                    <li><a href="#">contact@randomfun.com</a></li>			
+                    <li><a>symydnnn@gmail.com</a></li>
+                    <li><a>diclekilic79@gmail.com</a></li>
+                    <li><a>amacemirhan.dev@gmail.com</a></li>
+                    <li><a>muhammedmacit@gmail.com</a></li>			
                 </ul>
             </div>
         </div>
@@ -111,7 +116,6 @@
           </div>
         </div>
     </footer>
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

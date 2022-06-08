@@ -13,9 +13,9 @@
     "id": 1,
     "kullaniciAdi": "seyma",
     "sifre": "12345",
-    "adi": "Aydin",
-    "soyadi": null,
-    "eMail": null,
+    "adi": "Seyma",
+    "soyadi": "AYDIN",
+    "eMail": "semo@gmail.com",
     "dogumTarihi": null,
     "likesId": null
   },
@@ -53,6 +53,16 @@
     "soyadi": "Macit",
     "eMail": "macit@gmail.com",
     "dogumTarihi": "2022-03-16",
+    "likesId": null
+  },
+  {
+    "id": 5,
+    "kullaniciAdi": "busbus",
+    "sifre": "bus",
+    "adi": "B\u00FCsra",
+    "soyadi": "Ayd\u0131n",
+    "eMail": "bus@gmail.com",
+    "dogumTarihi": "1999-02-14",
     "likesId": null
   }
 ]

@@ -70,7 +70,7 @@ namespace WebProjeleri2022.Services
         }
 
 
-        public bool DeleteProject(KullaniciModel kullanici)
+        public bool DeleteComment(KullaniciModel kullanici)
         {
             List<KullaniciModel> kullanicilar = GetUsers();
             KullaniciModel query = kullanicilar.FirstOrDefault(x => x.kullaniciAdi == kullanici.kullaniciAdi);
@@ -82,7 +82,6 @@ namespace WebProjeleri2022.Services
             }
             else
                 return false;
-
         }
 
 
@@ -100,26 +99,25 @@ namespace WebProjeleri2022.Services
         }
 
 
-        public void UpdateUser(KullaniciModel kullanici)
+        public void UpdateUser(KullaniciModel kullanici, KullaniciModel yeniKullaci)
         {
             List<KullaniciModel> kullanicilar = GetUsers();
 
             KullaniciModel query = kullanicilar.FirstOrDefault(x => x.kullaniciAdi == kullanici.kullaniciAdi);
             if (query != null)
             {
-                if(kullanici.adi != null)
-                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].adi = kullanici.adi;
-                if (kullanici.dogumTarihi != null)
-                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].dogumTarihi = kullanici.dogumTarihi;
-                if (kullanici.soyadi != null)
-                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].soyadi = kullanici.soyadi;
-                if (kullanici.eMail != null)
-                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].eMail = kullanici.eMail;
+                if(yeniKullaci.adi != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].adi = yeniKullaci.adi;
+                if (yeniKullaci.dogumTarihi != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].dogumTarihi = yeniKullaci.dogumTarihi;
+                if (yeniKullaci.soyadi != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].soyadi = yeniKullaci.soyadi;
+                if (yeniKullaci.eMail != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].eMail = yeniKullaci.eMail;
                 JsonWriter(kullanicilar, true);
             }
 
         }
-
 
         //Bu fonksiyon like atılan fotoğrafları sayfada göstermek için
 
@@ -153,7 +151,6 @@ namespace WebProjeleri2022.Services
                 kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].likesId = kullanici.likesId;
                 JsonWriter(kullanicilar, true);
             }
-            
 
         }
 
