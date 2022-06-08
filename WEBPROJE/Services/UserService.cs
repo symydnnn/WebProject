@@ -86,7 +86,7 @@ namespace WebProjeleri2022.Services
         }
 
 
-        public void UpdateUser(KullaniciModel kullanici)
+        public void UpdateUserPassword(KullaniciModel kullanici)
         {
             List<KullaniciModel> kullanicilar = GetUsers();
 
@@ -98,6 +98,28 @@ namespace WebProjeleri2022.Services
             }
 
         }
+
+
+        public void UpdateUser(KullaniciModel kullanici)
+        {
+            List<KullaniciModel> kullanicilar = GetUsers();
+
+            KullaniciModel query = kullanicilar.FirstOrDefault(x => x.kullaniciAdi == kullanici.kullaniciAdi);
+            if (query != null)
+            {
+                if(kullanici.adi != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].adi = kullanici.adi;
+                if (kullanici.dogumTarihi != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].dogumTarihi = kullanici.dogumTarihi;
+                if (kullanici.soyadi != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].soyadi = kullanici.soyadi;
+                if (kullanici.eMail != null)
+                    kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].eMail = kullanici.eMail;
+                JsonWriter(kullanicilar, true);
+            }
+
+        }
+
 
         //Bu fonksiyon like atılan fotoğrafları sayfada göstermek için
 

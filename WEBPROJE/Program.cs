@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using WebProjeleri2022.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +8,11 @@ builder.Services.AddRazorPages();
 builder.Services.AddTransient<JsonProjectService>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<PhotoService>();
-
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSession();
+builder.Services.AddControllers(options => options.EnableEndpointRouting = false);
+builder.Services.AddMvc(option => option.EnableEndpointRouting = false);
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,10 +26,20 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+
 app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession();
+app.UseMvc();
+
 app.MapRazorPages();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
 
 app.Run();

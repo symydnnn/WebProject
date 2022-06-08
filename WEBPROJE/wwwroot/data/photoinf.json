@@ -2,49 +2,50 @@
   {
     "id": 0,
     "userId": 1,
-    "photoName": "çok beğendim",
+    "photoName": "\u00E7ok be\u011Fendim",
     "url": "https://i.pinimg.com/564x/e1/86/3b/e1863b05519cb3346f330f9846981c6e.jpg",
-    "likes": 0,
-    "comment": null
+    "likes": 0
   },
   {
     "id": 1,
     "userId": 2,
     "photoName": "guzelll",
     "url": "https://i.pinimg.com/564x/46/97/d4/4697d400428662f7adfb45c86cc74df9.jpg",
-    "likes": 0,
-    "comment": null
+    "likes": 0
   },
   {
     "id": 2,
     "userId": 2,
-    "photoName": "bayıldıım",
+    "photoName": "bay\u0131ld\u0131\u0131m",
     "url": "https://i.pinimg.com/564x/be/72/20/be722078e9d18736027c280670e435ef.jpg",
-    "likes": 0,
-    "comment": null
+    "likes": 0
   },
   {
     "id": 3,
     "userId": 0,
     "photoName": "aaa",
     "url": "https://i.pinimg.com/564x/4a/1b/83/4a1b83ccdc57cabb17396133708a60b2.jpg",
-    "likes": 0,
-    "comment": null
+    "likes": 0
   },
   {
     "id": 4,
     "userId": 0,
     "photoName": "nass1lll",
     "url": "https://i.pinimg.com/736x/83/f2/4d/83f24d6837c0519c60bd1d24498706c1.jpg",
-    "likes": 0,
-    "comment": null
+    "likes": 0
   },
   {
     "id": 5,
     "userId": 0,
     "photoName": "merhabaa",
     "url": "https://i.pinimg.com/564x/6c/f9/b1/6cf9b1f18a83372432d6f39c1fe15f02.jpg",
-    "likes": 0,
-    "comment": null
+    "likes": 0
+  },
+  {
+    "id": 6,
+    "userId": 0,
+    "photoName": "limon kafaa",
+    "url": "https://i.pinimg.com/564x/9b/11/87/9b11874356fde18bb1f753f098d41fdb.jpg",
+    "likes": 0
   }
 ]

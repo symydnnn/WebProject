@@ -2,22 +2,28 @@
 @model WebProjeleri2022.Pages.AddPhotoModel
 @{
 }
+@section Styles{
+    <link rel="stylesheet" href="~/css/changepassword.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+}
 
+    <form asp-page-handler="Form" method="post">
+        <div class="change-password">
+            <div class="form">
+                <span class="title">Fotoğraf Ekle</span>
+                <div class="input-field">
+                    <label class="form-label">Foto İsmi</label>
+                    <input type="text" class="form-control" asp-for="photo.photoName">
+                </div>
 
- <form asp-page-handler="Form" method="post">
-<div class="row g-3">
-    <div class="col-12">
-       <label class="form-label">Foto İsmi</label>
-        <input type="text" class="form-control" asp-for="photo.photoName">
-    </div>
+                <div class="input-field">
+                    <label class="form-label">Foto URL</label>
+                    <input type="text" class="form-control" asp-for="photo.url">
+                </div>
 
-    <div class="col-12">
-       <label class="form-label">Foto URL</label>
-        <input type="text" class="form-control" asp-for="photo.url">
-    </div>
-
-    <div class="col-13">
-        <button type="submit" class="buton">Ekle</button>
-    </div>
-</div>
-</form>
+                <div class="input-field button">
+                        <input type="submit" value="Ekle">
+                    </div>
+            </div>
+        </div>
+    </form>

@@ -32,7 +32,7 @@ namespace WebProjeleri2022.Pages
             {
                 if (user.sifre != null)
 
-                    userService.UpdateUser(user);
+                    userService.UpdateUserPassword(user);
 
                     return RedirectToPage("/Admin", new { Status = "True" });
             }

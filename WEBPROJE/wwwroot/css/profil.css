@@ -1,0 +1,11 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    height: 100vh;
+    display: flexed;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4a870;
+}

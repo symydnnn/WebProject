@@ -1,7 +1,9 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
 @model WebProjeleri2022.Pages.LoginModel
 @{
-    
+     var message = HttpContext.Request.PathBase;
 }
 @section Styles{
     <link rel="stylesheet" href="~/css/login.css">
@@ -16,11 +18,11 @@
             <span class="title">Login</span>
             <span action="#">
                 <div class="input-field">
-                    <input type="text" placeholder="Username" required asp-for="user.kullaniciAdi">
+                    <input type="text" placeholder="Username" asp-for="user.kullaniciAdi">
                     <i class="uil uil-envelope icon"></i>
                 </div>
                 <div class="input-field">
-                    <input type="password" class="password" placeholder="Password" required asp-for="user.sifre">
+                    <input type="password" class="password" placeholder="Password" asp-for="user.sifre">
                     <i class="uil uil-lock icon"></i>
                     <i class="uil uil-eye-slash showHidePw"></i>
                 </div>

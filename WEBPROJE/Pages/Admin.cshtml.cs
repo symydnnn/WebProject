@@ -7,27 +7,36 @@ namespace WebProjeleri2022.Pages
 {
     public class AdminModel : PageModel
     {
-        public JsonProjectService jsonProjectService;
-        public AdminModel(JsonProjectService JsonProjectService)
+        public UserService userService;
+        public AdminModel(UserService UserService)
         {
-            jsonProjectService = JsonProjectService;
+            userService = UserService;
         }
 
         [BindProperty]
-        public ProjectModel proje { get; set; }
+        public KullaniciModel kullanici { get; set; }
 
-
+        ISession session { get; set; }
 
         public void OnGet()
         {
         }
 
         public IActionResult OnPostForm()
-        {       
-            jsonProjectService.AddProject(proje);
+        {
+            List<KullaniciModel> Kullanici = userService.GetUsers();
+            var kontrol = Kullanici.Where(a => a.kullaniciAdi == kullanici.kullaniciAdi).FirstOrDefault();
 
-            return RedirectToPage("/Index", new {Status = "True"});
+            if (kontrol != null)
+            {
+                    userService.UpdateUser(kullanici);
 
+                return RedirectToPage("/Admin", new { Status = "True" });
+            }
+
+            return RedirectToPage("/ChangePassword", new { Status = "True" });
         }
+
     }
-}
+    }
+

@@ -1,28 +1,51 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
 @model WebProjeleri2022.Pages.AdminModel
 @{
 }
+@section Styles{
+    <link rel="stylesheet" href="~/css/profil.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="~/js/loginregister.js" asp-append-version="true"></script>
+}
+
+
+
 
 <form asp-page-handler="Form" method="post">
-    <div class="row g-3">
-  <div class="col-md-6">
-    <label class="form-label">TakimID</label>
-    <input type="text" class="form-control" asp-for="proje.id">
-  </div>
-  <div class="col-md-6">
-    <label class="form-label">Takim Adi</label>
-    <input type="text" class="form-control" asp-for="proje.name">
-  </div>
-  <div class="col-12">
-    <label class="form-label">Takim Adi</label>
-    <input type="text" class="form-control" asp-for="proje.description">
-  </div>
-  <div class="col-12">
-   <label class="form-label">Takim Adi</label>
-   <input type="text" class="form-control" asp-for="proje.url">
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Ekle/Guncelle</button>
-  </div>
-</div>
+    <div class="profil-goruntule">
+        <div class="profil-bilgiler">
+               <label class="form-label"> Merhaba @Model.userService.GetUserByNickname(@Accessor.HttpContext.Session.GetString("KullaniciAdi")).adi 
+                   @Model.userService.GetUserByNickname(@Accessor.HttpContext.Session.GetString("KullaniciAdi")).soyadi </label>
+               <label class="form-label"> @Model.userService.GetUserByNickname(@Accessor.HttpContext.Session.GetString("KullaniciAdi")).dogumTarihi </label>
+               <label class="form-label"> @Model.userService.GetUserByNickname(@Accessor.HttpContext.Session.GetString("KullaniciAdi")).eMail</label>
+        </div>
+    </div>
+
+    <div class="profil-guncelle">Profil Güncelle
+        <div class="input-field">
+            <label class="form-label">Adı:</label>
+            <input type="text" class="form-control" asp-for="kullanici.adi">
+        </div>
+        <div class="input-field">
+            <label class="form-label">Soyadı:</label>
+            <input type="text" class="form-control" asp-for="kullanici.soyadi">
+        </div>
+        <div class="input-field">
+            <label class="form-label">E-mail:</label>
+            <input type="email" class="form-control" asp-for="kullanici.eMail">
+        </div>
+
+        <div class="input-field">
+            <label class="form-label">Doğum Tarihi:</label>
+            <input type="date" class="form-control" asp-for="kullanici.dogumTarihi">
+        </div>
+
+        <div class="input-field button">
+            <input type="submit" value="Guncelle">
+        </div>
+
+    </div>
+
 </form>
