@@ -8,9 +8,15 @@ namespace WebProjeleri2022.Pages
     public class AdminModel : PageModel
     {
         public UserService userService;
-        public AdminModel(UserService UserService)
+
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+
+
+        public AdminModel(UserService UserService, IHttpContextAccessor httpContextAccessor)
         {
             userService = UserService;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [BindProperty]
@@ -25,7 +31,7 @@ namespace WebProjeleri2022.Pages
         public IActionResult OnPostForm()
         {
             List<KullaniciModel> Kullanici = userService.GetUsers();
-            var kontrol = Kullanici.Where(a => a.kullaniciAdi == kullanici.kullaniciAdi).FirstOrDefault();
+            var kontrol = Kullanici.Where(a => a.kullaniciAdi == _httpContextAccessor.HttpContext.Session.GetString("KullaniciAdi")).FirstOrDefault();
 
             if (kontrol != null)
             {

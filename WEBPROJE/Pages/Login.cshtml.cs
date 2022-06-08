@@ -17,7 +17,7 @@ namespace WebProjeleri2022.Pages
             _httpContextAccessor = httpContextAccessor;
         }
 
-            [BindProperty]
+        [BindProperty]
         public KullaniciModel user { get; set; }
 
 
