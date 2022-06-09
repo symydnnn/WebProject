@@ -2,16 +2,8 @@
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor Accessor
 @model WebProjeleri2022.Pages.FotograflarModel
+@Html.AntiForgeryToken()
 @{
-}
-@functions {
-    public object AddLikes(int photoId)
-    {
-        string kullaniciAdi = @Accessor.HttpContext.Session.GetString("KullaniciAdi");
-        Console.WriteLine(photoId);
-        @Model.userService.addToLikes(kullaniciAdi, photoId);
-        return null;
-    }
 }
 
 <html lang="en">
@@ -21,7 +13,6 @@
     <title>Photo gallery UI</title>
     <link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./site.js"></script>
 
 </head>
 <body>
@@ -36,59 +27,63 @@
             </div>
 
             <div class="gallery" id="album-view">
-                @foreach (var foto in Model.Photos)
-                {
-                    <div class="item zoom" style="max-width: 20rem; border:none;">
-                        <img class="gview" src=@foto.url>
-                        <h3 id=null>@foto.photoName</h3>
-                    </div>
+                <form id="theForm" asp-page-handler="AddLikeOrComment" method="post">
+                    @foreach (var foto in Model.Photos)
+                    {
+                        <div class="foto">
+                            <div class="item zoom" style="max-width: 20rem; border:none;">
+                                <img class="gview" src=@foto.url>
+                                <h3 id=null>@foto.photoName</h3>
+                            </div>
 
-                    <span class="buttons">
-                        <span>
-                            <a download="a.jpg" href=@foto.url>
-                                <button class="btn @foto.id fotobtn"><i class="fa fa-download"></i> İndir</button>
+                                <span class="buttons">
+                                    <span>
+                                        <a download="a.jpg" href=@foto.url>
+                                            <button class="btn @foto.id fotobtn"><i class="fa fa-download"></i> İndir</button>
 
-                            </a>
-                        </span>
-                        <span>
-                            <button type="button" class="btn fotobtn" asp-for="@Model.photoId = @foto.id" onclick="AddProduct(@foto.id)">
-                                <p id="ShowResult1">
-                                </p><i class="fa fa-heart"></i> Beğen
-                            </button>
-                        </span>
-                        <script>
-                            var count = 0;
-                            function AddProduct(fotoId) {
-                            @{
-                                AddLikes(@foto.id);
-                            }
-                                count++;
-                                $("#ShowResult1").text(count);
-                            }
-                        </script>
-                        @*<span><img class="downloadbutton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcTIGCDOMvv0movJ0nWSNiu5eS4ukPtNEQ&usqp=CAU" /></span>*@
-                    </span>
+                                        </a>
+                                    </span>
+                                    <input asp-for=photoId type="hidden" value="" id="takeId" />
+                                    <a class="btn fotobtn" onclick="AddLikeOrComment(@foto.id)">
+                                        <p id="ShowResult1">
+                                        </p><i class="fa fa-heart"></i> Beğen
+                                    </a>
+                                    @*<span><img class="downloadbutton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcTIGCDOMvv0movJ0nWSNiu5eS4ukPtNEQ&usqp=CAU" /></span>*@
+                                </span>
 
-                    <div class="yorumlar">
-                        <div class="yorum-panel">
-                            @foreach (var Yorumlar in @Model.photoService.GetCommentsByPhotoId(@foto.id))
-                            {
-                                <h4>@Yorumlar</h4>
-                            }
+                                <div class="yorumlar">
+                                    <div class="yorum-panel">
+                                        @foreach (var Yorumlar in @Model.photoService.GetCommentsByPhotoId(@foto.id))
+                                        {
+                                            <h4>@Yorumlar</h4>
+                                        }
+                                    </div>
+
+                                    <input value="" asp-for="comment.comment" type="hidden" id="setText">
+                                    <input oninput="bind(this.value)" id="getText" type="text" placeholder="Yorum">
+                                    <a id = "yorum-btn" style="text-decoration:none;" class="btn btn-success mt-50" onclick="AddLikeOrComment(@foto.id)">Yorumla</a>>
+
+                                </div>
                         </div>
-                        <input type="text" class="yorumla" placeholder="Yorum" required asp-for="comment.comment">
-                        <input type="submit" value="Yorumla!">
-                    </div>
-
-                }
+                    }
+                </form>
             </div>
-            <a class="load-more" asp-page="/AddPhoto" data-img="curated">Daha Fazlası!</a>
+            <a class="load-more" asp-page="/AddPhoto" data-img="curated">Daha Fazlası İçin Ekle!</a>
         </div>
     </section>
     <section id="album">
     </section>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script>
+        function AddLikeOrComment(id) {
+            document.getElementById('takeId').value = id;
+            document.getElementById("theForm").submit();
+        }
+        function bind(text) {
+            document.getElementById('setText').value = text;
+        }
+    </script>
 </body>
 
 

@@ -107,6 +107,13 @@ form ion-icon {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 50px;
     grid-gap: 20px;
+    display: flexed;
+}
+
+.foto {
+    display: flex;
+    width: 200%;
+    margin-bottom: 50px;
 }
 
 .item {
@@ -630,3 +637,8 @@ footer .bottom-details {
     height: 30vh;
     width: 10vw;
 }
+
+.yorum-panel{
+    margin-bottom:20px;
+}
+

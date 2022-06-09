@@ -16,8 +16,10 @@
     "adi": "Seyma",
     "soyadi": "AYDIN",
     "eMail": "semo@gmail.com",
-    "dogumTarihi": null,
-    "likesId": null
+    "dogumTarihi": "1999-01-14",
+    "likesId": [
+      1
+    ]
   },
   {
     "id": 2,
@@ -32,7 +34,8 @@
       2,
       3,
       7,
-      8
+      8,
+      1
     ]
   },
   {
@@ -43,7 +46,10 @@
     "soyadi": "K\u0131l\u0131\u00E7",
     "eMail": "dic@gmail.com",
     "dogumTarihi": "2022-01-05",
-    "likesId": null
+    "likesId": [
+      1,
+      2
+    ]
   },
   {
     "id": 4,
@@ -53,7 +59,10 @@
     "soyadi": "Macit",
     "eMail": "macit@gmail.com",
     "dogumTarihi": "2022-03-16",
-    "likesId": null
+    "likesId": [
+      1,
+      2
+    ]
   },
   {
     "id": 5,
@@ -63,6 +72,21 @@
     "soyadi": "Ayd\u0131n",
     "eMail": "bus@gmail.com",
     "dogumTarihi": "1999-02-14",
-    "likesId": null
+    "likesId": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 6,
+    "kullaniciAdi": "emregoren",
+    "sifre": "emre",
+    "adi": "tacettin",
+    "soyadi": "goren",
+    "eMail": "emregoren@gmail.com",
+    "dogumTarihi": "1999-01-01",
+    "likesId": [
+      3
+    ]
   }
 ]

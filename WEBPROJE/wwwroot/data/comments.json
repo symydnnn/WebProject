@@ -12,7 +12,7 @@
       "dogumTarihi": null,
       "likesId": null
     },
-    "comment": "ay çok beğendim",
+    "comment": "ay \u00E7ok be\u011Fendim",
     "dateTime": "2022-05-04"
   },
   {
@@ -28,8 +28,51 @@
       "dogumTarihi": null,
       "likesId": null
     },
-    "comment": "Çok kötü",
+    "comment": "\u00C7ok k\u00F6t\u00FC",
     "dateTime": "2022-05-04"
+  },
+  {
+    "id": 2,
+    "photoId": 3,
+    "KullaniciModel": {
+      "id": 2,
+      "kullaniciAdi": "emo",
+      "sifre": "emo",
+      "adi": "emirhan",
+      "soyadi": "ama\u00E7",
+      "eMail": "emo@gmail.com",
+      "dogumTarihi": "2022-05-04",
+      "likesId": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    "comment": "ne g\u00FCzel \u00E7ocuk",
+    "dateTime": null
+  },
+  {
+    "id": 3,
+    "photoId": 4,
+    "KullaniciModel": {
+      "id": 2,
+      "kullaniciAdi": "emo",
+      "sifre": "emo",
+      "adi": "emirhan",
+      "soyadi": "ama\u00E7",
+      "eMail": "emo@gmail.com",
+      "dogumTarihi": "2022-05-04",
+      "likesId": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    "comment": "g\u00F6zl\u00FCkler yak\u0131yor",
+    "dateTime": null
   }
-
 ]

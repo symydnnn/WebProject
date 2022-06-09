@@ -13,18 +13,15 @@ namespace WebProjeleri2022.Pages
 
         private readonly ILogger<FotograflarModel> _logger;
 
-        public FotograflarModel(ILogger<FotograflarModel> logger, PhotoService PhotoService, IHttpContextAccessor httpContextAccessor)
+        public FotograflarModel(PhotoService PhotoService, UserService UserService, IHttpContextAccessor httpContextAccessor)
         {
-            _logger = logger;
-
             photoService = PhotoService;
+            userService = UserService;
             _httpContextAccessor = httpContextAccessor;
         }
 
-        [BindProperty]
         public PhotoService photoService { get; set; }
 
-        [BindProperty]
         public UserService userService { get; set; }
 
         [BindProperty]
@@ -39,12 +36,15 @@ namespace WebProjeleri2022.Pages
             
         }
 
-        [FromQuery]
-        public int photoId { get; set; }
-
+        [BindProperty]
+        public string photoId { get; set; }
 
         [BindProperty]
-        public string url { get; set; }
+        public string commentText { get; set; }
+
+        [BindProperty]
+        public int likes { get; set; }
+        
 
 
         public IActionResult OnPostForm()
@@ -58,7 +58,29 @@ namespace WebProjeleri2022.Pages
 
         }
 
+        public IActionResult OnPostAddLikeOrComment()
+        {
+            string kullaniciAdi = _httpContextAccessor.HttpContext.Session.GetString("KullaniciAdi");
+            
+            if (comment.comment == null)
+            {
+                if (photoId != null)
+                {
+                    likes = (photoService.GetLikesOfPhoto(Convert.ToInt32(photoId)) + 1);
+                    userService.addToLikes(kullaniciAdi, Convert.ToInt32(photoId));
+                }
+            }
+            if(comment.comment != null)
+            {
+                comment.photoId = Convert.ToInt32(photoId);
+                photoService.AddComment(userService.GetUserByNickname(kullaniciAdi), comment);
+            }
 
+
+            return RedirectToPage("/Fotograflar", new { Status = "True" }); ;
+
+        }
+        
         public IActionResult OnComments(int photoId)
         {
             List<String> comments = photoService.GetCommentsByPhotoId(photoId);

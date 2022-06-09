@@ -138,8 +138,9 @@ namespace WebProjeleri2022.Services
         }
 
         // kalp atmak için
-        public void addToLikes(String kullaniciAdi, int photoId)
+        public void addToLikes(string kullaniciAdi, int photoId)
         {
+            
             KullaniciModel kullanici = GetUserByNickname(kullaniciAdi);
 
             List<KullaniciModel> kullanicilar = GetUsers();

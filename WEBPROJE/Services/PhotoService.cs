@@ -8,13 +8,14 @@ namespace WebProjeleri2022.Services
 {
     public class PhotoService
     {
-        public PhotoService(IWebHostEnvironment webHostEnvironment)
+        public PhotoService(IWebHostEnvironment webHostEnvironment, UserService userService)
         {
             WebHostEnvironment = webHostEnvironment;
-
+            _userService = userService;
         }
 
         public IWebHostEnvironment WebHostEnvironment;
+        private readonly UserService _userService;
 
         public string JsonFileName
         {
@@ -84,21 +85,19 @@ namespace WebProjeleri2022.Services
         {
             var photo = GetPhotoById(photoId);
 
-            UserService userService = null;
-            var users = userService.GetUsers();
-            for(var i=0; i < userService.GetUsers().Count; i++)
+            var users = _userService.GetUsers();
+            for(var i=0; i < _userService.GetUsers().Count; i++)
             {
-                var user = userService.GetUsers()[i];
-                if(user == null)
-                {
-                    continue;
-                }
-                else
+                var user = _userService.GetUsers()[i];
+                if(user != null)
                 {
                     var likes = user.likesId;
-                    if (likes.Contains(photoId))
+                    if(likes != null)
                     {
-                        photo.likes++;
+                        if (likes.Contains(photoId))
+                        {
+                            photo.likes++;
+                        }
                     }
                     
                 }
@@ -155,15 +154,11 @@ namespace WebProjeleri2022.Services
 
         public void AddComment(KullaniciModel kullanici, CommentModel comment)
         {
-            UserService userService = null;
-            List<KullaniciModel> kullanicilar = userService.GetUsers();
+            List<KullaniciModel> kullanicilar = _userService.GetUsers();
             List<CommentModel> yorumlar = GetComments();
 
-            CommentModel commentKontrol = yorumlar.FirstOrDefault(x => x.id == comment.id);
             KullaniciModel user = kullanicilar.FirstOrDefault(x => x.kullaniciAdi == kullanici.kullaniciAdi);
 
-            if (commentKontrol == null)
-            {
                 if (user != null)
                 {
                     comment.id = yorumlar.Max(x => x.id) + 1;
@@ -175,9 +170,6 @@ namespace WebProjeleri2022.Services
                     JsonSerializer.Serialize<List<CommentModel>>(jsonwriter, yorumlar);
                 }
             }
-
-        }
-
 
     }
 }

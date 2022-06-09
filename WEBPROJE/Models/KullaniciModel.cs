@@ -4,10 +4,8 @@
     {
         public int id { get; set; }
 
-        ///[Required(ErrorMessage = "Kullanıcı adı girilmeli")]
         public string kullaniciAdi { get; set; }
 
-        //[Required(ErrorMessage = "Şifre girilmeli")]
         public string sifre { get; set; }
 
         public string adi { get; set; }
@@ -20,7 +18,10 @@
 
         public List<int> likesId { get; set; }
 
-
+        public KullaniciModel()
+        {
+            likesId = new List<int>();
+        }
 
     }
 }

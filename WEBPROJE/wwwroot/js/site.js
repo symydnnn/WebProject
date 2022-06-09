@@ -1,18 +1,4 @@
 ﻿
-
-//function onClick(event) {
-//    var ekle = document.getElementsByClassName('profil');
-//    if (ekle.style.display == 'none') {
-//        ekle.style.display = 'inline';
-//    } else {
-//        ekle.style.display = 'none';
-//    }
-//}
-
-//const button = document.querySelector(".butttoooon");
-//button.addEventListener("click", onClick);
-
-
 function createImage(src) {
 
     const image = document.createElement('img');
