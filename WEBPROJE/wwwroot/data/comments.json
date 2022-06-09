@@ -74,5 +74,53 @@
     },
     "comment": "g\u00F6zl\u00FCkler yak\u0131yor",
     "dateTime": null
+  },
+  {
+    "id": 4,
+    "photoId": 1,
+    "KullaniciModel": {
+      "id": 2,
+      "kullaniciAdi": "emo",
+      "sifre": "emo",
+      "adi": "emirhan",
+      "soyadi": "ama\u00E7",
+      "eMail": "emo@gmail.com",
+      "dogumTarihi": "2022-05-04",
+      "likesId": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        1
+      ]
+    },
+    "comment": "dans eden adam",
+    "dateTime": null
+  },
+  {
+    "id": 5,
+    "photoId": 3,
+    "KullaniciModel": {
+      "id": 2,
+      "kullaniciAdi": "emo",
+      "sifre": "emo",
+      "adi": "emirhan",
+      "soyadi": "ama\u00E7",
+      "eMail": "emo@gmail.com",
+      "dogumTarihi": "2022-05-04",
+      "likesId": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        1,
+        0,
+        2
+      ]
+    },
+    "comment": "aaa",
+    "dateTime": null
   }
 ]

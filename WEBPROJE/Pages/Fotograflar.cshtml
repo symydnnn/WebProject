@@ -20,10 +20,6 @@
         <div class="ana">
             <div class="header">
                 <h1 class="logo">Fotoğraflar</h1>
-                <form>
-                    <input type="text" placeholder="Araştır">
-                    <ion-icon name="search-outline"></ion-icon>
-                </form>
             </div>
 
             <div class="gallery" id="album-view">
@@ -45,8 +41,8 @@
                                     </span>
                                     <input asp-for=photoId type="hidden" value="" id="takeId" />
                                     <a class="btn fotobtn" onclick="AddLikeOrComment(@foto.id)">
-                                        <p id="ShowResult1">
-                                        </p><i class="fa fa-heart"></i> Beğen
+                                        <p id="ShowResult1">@Model.photoService.GetLikesOfPhoto(@foto.id)</p>
+                                        <i class="fa fa-heart"></i> Beğen
                                     </a>
                                     @*<span><img class="downloadbutton" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDcTIGCDOMvv0movJ0nWSNiu5eS4ukPtNEQ&usqp=CAU" /></span>*@
                                 </span>
@@ -55,13 +51,13 @@
                                     <div class="yorum-panel">
                                         @foreach (var Yorumlar in @Model.photoService.GetCommentsByPhotoId(@foto.id))
                                         {
-                                            <h4>@Yorumlar</h4>
+                                            <div class="yorumtext">@Yorumlar</div>
                                         }
                                     </div>
 
                                     <input value="" asp-for="comment.comment" type="hidden" id="setText">
                                     <input oninput="bind(this.value)" id="getText" type="text" placeholder="Yorum">
-                                    <a id = "yorum-btn" style="text-decoration:none;" class="btn btn-success mt-50" onclick="AddLikeOrComment(@foto.id)">Yorumla</a>>
+                                    <a id = "yorum-btn" style="text-decoration:none;" class="btn btn-success mt-50" onclick="AddLikeOrComment(@foto.id)">Yorumla</a>
 
                                 </div>
                         </div>

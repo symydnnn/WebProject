@@ -80,7 +80,7 @@ input {
     border: none;
     border-bottom: 2px solid rgba(128, 128, 128, 0.479);
     font-size: 20px;
-    width: 80%;
+    width: 75%;
     outline: none;
     color: gray;
     background-color: transparent;
@@ -112,7 +112,7 @@ form ion-icon {
 
 .foto {
     display: flex;
-    width: 200%;
+    width: 500%;
     margin-bottom: 50px;
 }
 
@@ -638,7 +638,22 @@ footer .bottom-details {
     width: 10vw;
 }
 
-.yorum-panel{
-    margin-bottom:20px;
+.yorum-panel {
+    height: 30vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid #e4a870;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.yorumtext {
+    border: 2px solid #e4a870;
+    border-radius: 5px;
+}
+
+#yorum-btn {
+    margin-top: 20px;
 }
 
