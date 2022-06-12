@@ -1,1 +1,1 @@
-##WEB PROJESİ
+##WEB PROJESİ https://randomfun.azurewebsites.net/
