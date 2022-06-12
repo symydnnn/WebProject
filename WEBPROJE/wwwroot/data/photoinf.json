@@ -47,5 +47,26 @@
     "photoName": "limon kafaa",
     "url": "https://i.pinimg.com/564x/9b/11/87/9b11874356fde18bb1f753f098d41fdb.jpg",
     "likes": 0
+  },
+  {
+    "id": 7,
+    "userId": 0,
+    "photoName": "https://i.pinimg.com/564x/37/5c/d9/375cd9ce9aec9aa6cc1a7db5a556781e.jpg",
+    "url": "vay can\u0131na",
+    "likes": 0
+  },
+  {
+    "id": 8,
+    "userId": 0,
+    "photoName": "\u00E7ok g\u00FCzel",
+    "url": "https://i.pinimg.com/564x/6b/d6/2e/6bd62e0e9a7885794600b307312bd7ac.jpg",
+    "likes": 0
+  },
+  {
+    "id": 9,
+    "userId": 0,
+    "photoName": "vovv",
+    "url": "aa",
+    "likes": 0
   }
 ]

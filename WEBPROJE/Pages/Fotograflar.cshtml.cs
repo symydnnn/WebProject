@@ -66,7 +66,7 @@ namespace WebProjeleri2022.Pages
             {
                 if (photoId != null)
                 {
-                    likes = (photoService.GetLikesOfPhoto(Convert.ToInt32(photoId)) + 1);
+                    likes = (photoService.GetLikesOfPhoto(Convert.ToInt32(photoId)));
                     userService.addToLikes(kullaniciAdi, Convert.ToInt32(photoId));
                 }
             }

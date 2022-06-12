@@ -22,6 +22,9 @@ namespace WebProjeleri2022.Pages
         [BindProperty]
         public KullaniciModel kullanici { get; set; }
 
+        [BindProperty]
+        public string kullaniciId { get; set; }
+
         public void OnGet()
         {
         }
@@ -34,6 +37,21 @@ namespace WebProjeleri2022.Pages
             if (kontrol != null)
             {
                     userService.UpdateUser(userService.GetUserByNickname(kontrol.kullaniciAdi), kullanici);
+
+                return RedirectToPage("/Admin", new { Status = "True" });
+            }
+
+            return RedirectToPage("/ChangePassword", new { Status = "True" });
+        }
+
+        public IActionResult OnPostDeleteUser()
+        {
+            List<KullaniciModel> Kullanici = userService.GetUsers();
+            var kontrol = Kullanici.Where(a => a.kullaniciAdi == _httpContextAccessor.HttpContext.Session.GetString("KullaniciAdi")).FirstOrDefault();
+
+            if (kontrol != null)
+            {
+                userService.DeleteUserByNickname(kontrol);
 
                 return RedirectToPage("/Admin", new { Status = "True" });
             }

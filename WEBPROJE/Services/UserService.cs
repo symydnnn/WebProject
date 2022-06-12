@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using System.Text.Json;
 using WebProjeleri2022.Models;
 
@@ -15,6 +16,7 @@ namespace WebProjeleri2022.Services
         }
 
         public IWebHostEnvironment WebHostEnvironment;
+        
 
         public string JsonFileName
         {
@@ -45,6 +47,14 @@ namespace WebProjeleri2022.Services
 
         }
 
+        public List<CommentModel> GetComments()
+        {
+            using var json = File.OpenText(Path.Combine(WebHostEnvironment.WebRootPath, "data", "user.json"));
+
+            return JsonSerializer.Deserialize<CommentModel[]>(json.ReadToEnd()).ToList();
+
+        }
+
         public KullaniciModel GetUserByNickname(string nickName)
         {
             List<KullaniciModel> Kullanicilar = GetUsers();
@@ -57,7 +67,7 @@ namespace WebProjeleri2022.Services
         public void AddUser(KullaniciModel newUser)
         {
             List<KullaniciModel> Kullanicilar = GetUsers();
-            if(newUser.kullaniciAdi != null && newUser.sifre != null)
+            if (newUser.kullaniciAdi != null && newUser.sifre != null)
             {
                 newUser.id = Kullanicilar.Max(x => x.id) + 1;
 
@@ -70,7 +80,7 @@ namespace WebProjeleri2022.Services
         }
 
 
-        public bool DeleteComment(KullaniciModel kullanici)
+        public bool DeleteUserByNickname(KullaniciModel kullanici)
         {
             List<KullaniciModel> kullanicilar = GetUsers();
             KullaniciModel query = kullanicilar.FirstOrDefault(x => x.kullaniciAdi == kullanici.kullaniciAdi);
@@ -83,6 +93,28 @@ namespace WebProjeleri2022.Services
             else
                 return false;
         }
+
+
+        public bool DeleteComment(KullaniciModel kullanici, CommentModel comment)
+        {
+            List<CommentModel> comments = GetComments();
+
+            CommentModel kontrol = comments.FirstOrDefault(x => x.id == comment.id);
+            if (kontrol != null)
+            {
+                comments.Remove(kontrol);
+                JsonWriter(comments, true);
+                return true;
+            }
+            else
+                return false;
+        }
+
+        private void JsonWriter(List<CommentModel> comments, bool v)
+        {
+            throw new NotImplementedException();
+        }
+
 
 
         public void UpdateUserPassword(KullaniciModel kullanici)
@@ -106,7 +138,7 @@ namespace WebProjeleri2022.Services
             KullaniciModel query = kullanicilar.FirstOrDefault(x => x.kullaniciAdi == kullanici.kullaniciAdi);
             if (query != null)
             {
-                if(yeniKullaci.adi != null)
+                if (yeniKullaci.adi != null)
                     kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].adi = yeniKullaci.adi;
                 if (yeniKullaci.dogumTarihi != null)
                     kullanicilar[kullanicilar.FindIndex(x => x.kullaniciAdi == kullanici.kullaniciAdi)].dogumTarihi = yeniKullaci.dogumTarihi;
@@ -126,7 +158,7 @@ namespace WebProjeleri2022.Services
             var kullanici = GetUserByNickname(nickName);
             List<int> likesId;
 
-            if(kullanici != null)
+            if (kullanici != null)
             {
                 likesId = kullanici.likesId;
             }
@@ -140,7 +172,7 @@ namespace WebProjeleri2022.Services
         // kalp atmak için
         public void addToLikes(string kullaniciAdi, int photoId)
         {
-            
+
             KullaniciModel kullanici = GetUserByNickname(kullaniciAdi);
 
             List<KullaniciModel> kullanicilar = GetUsers();

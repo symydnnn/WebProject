@@ -31,6 +31,7 @@ namespace WebProjeleri2022.Pages
                 return RedirectToPage("/AddPhoto", new { Status = "True" });
 
             }
+           
 
             return null;
 

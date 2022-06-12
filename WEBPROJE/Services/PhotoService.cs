@@ -8,6 +8,8 @@ namespace WebProjeleri2022.Services
 {
     public class PhotoService
     {
+
+        private readonly UserService _userService;
         public PhotoService(IWebHostEnvironment webHostEnvironment, UserService userService)
         {
             WebHostEnvironment = webHostEnvironment;
@@ -15,7 +17,7 @@ namespace WebProjeleri2022.Services
         }
 
         public IWebHostEnvironment WebHostEnvironment;
-        private readonly UserService _userService;
+        
 
         public string JsonFileName
         {
@@ -61,7 +63,7 @@ namespace WebProjeleri2022.Services
             if(query == null)
             {
                 photo.id = fotolar.Max(x => x.id) + 1;
-
+                photo.likes = 0;
                 fotolar.Add(photo);
                 using var json = File.OpenWrite(JsonFileName);
                 Utf8JsonWriter jsonwriter = new Utf8JsonWriter(json, new JsonWriterOptions { Indented = true });
@@ -84,7 +86,7 @@ namespace WebProjeleri2022.Services
         public int GetLikesOfPhoto(int photoId)
         {
             var photo = GetPhotoById(photoId);
-
+            int totalLike = 0;
             var users = _userService.GetUsers();
             for(var i=0; i < _userService.GetUsers().Count; i++)
             {
